@@ -1,0 +1,387 @@
+:root {
+  --colorTextos: #8dc9e6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  z-index: 1;
+}
+
+body {
+  background: #f3f5fc;
+  /*overflow: auto;*/
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+  }
+
+body::-webkit-scrollbar-thumb{
+    background: #3caa94;
+    border-radius: 1px;
+  }
+
+header {
+  left: 0%;
+  background-color: rgba (68, 148, 148, 0.5);
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(to right, #3caa94,#449494, #3caa94);
+  transition: 0.3s ease all;
+}
+
+.titulo {
+  position: relative; width: 100%; height:20%; font-size: 30px;
+  font-style: bold; color: #ffffff; text-align: center; top:20%;
+}
+
+.caja_uno{
+  position:relative; width: 94%; margin-top:5%; height:30%; left:2%; right:2%; padding: 2%;
+  font-family: "Inter"; font-style: normal; font-weight: 400; font-size: 20px; text-justify: justify;
+  text-align: center; text-transform: lowercase;
+  color: #0a3871;  background-color: #ffffff50;  border: 1px solid #46c586; border-radius: 4px;
+  resize: none;
+}
+
+.caja_uno::-webkit-scrollbar{
+    width: 7px;
+  }
+
+  .caja_uno::-webkit-scrollbar-thumb{
+    background: #46c586;
+    border-radius: 5px;
+  }
+
+.mensaje_acento{
+  position: relative; width: 96%; top: 42%; left:2%; margin-top: 1%;
+  text-align: center; color: #449494; padding: 1%; display: inline-block;
+}
+
+.contenedorDos{
+  position: relative;
+   margin-bottom: 3%; width: 94%; height: 100%; padding: 0px 0px 0px 0px; margin: 0px 0px 3% 0px; display: inline-block;
+   margin-left: 6%;
+}
+
+.encryptorButton {
+    background-color: white; /* Green */ border: 1px solid #bdbfc2; box-sizing: border-box; border-radius: 10px;
+    color: #46c586; padding: 12px 32px; text-align: center; text-decoration: none;display: inline-block;
+    font-size: 16px;  width: 45%; margin-top:2%
+}
+
+.encryptorButton:hover {
+  background-color:#46c586;
+  color: white;
+}
+
+.decryptorButton {
+  background-color: white; /* Green */ border: 1px solid #bdbfc2;  box-sizing: border-box;  border-radius: 10px;  color: #46c586;
+  padding: 12px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;
+  width: 45%;
+}
+
+.decryptorButton:hover {
+  background-color: #46c586; color: white;
+}
+
+.caja_dos {
+  position:relative; display: inline-block; width: 94%; height:40%; left:2%; right:2%; padding: 2%; margin: 0%; font-family: "Inter"; font-style: normal; 
+  font-weight: 400;  font-size: 20px;  color: #0a3871;  text-align: center;  text-justify: justify; text-transform: lowercase;
+  background-color: #ffffff50; border: 1px solid #46c586; border-radius: 4px; resize: none; z-index: 10;
+}
+.caja_dos::-webkit-scrollbar{
+    width: 7px;
+  }
+
+  .caja_dos::-webkit-scrollbar-thumb{
+    background: #46c586; border-radius: 5px;
+  }
+
+  .copiarButton{
+    position: relative;  display: inline-block; background-color: white; /* Green */ 
+    border: 1px solid #46c586;  box-sizing: border-box;
+    border-radius: 10px;  color: #46c586;  padding: 2.5% 3%;  text-align: center;
+    text-decoration: none;  font-size: 24px;  margin: 0%;  margin-top: 5%;
+    background-color: transparent;  top: 8%;  left:0%;  z-index: 30;
+}
+
+.copiarButton:hover {
+  background-color: #46c586; color: white;
+}
+
+.limpiarButton {
+    position: relative;  display: inline-block; background-color: white; /* Green */  border: 1px solid #bdbfc2;  box-sizing: border-box;
+    border-radius: 10px;  top: 45%;  color: #46c586;  text-align: center;  text-decoration: none;  font-size: 16px;
+    margin-left: 3%;  width: 78%;  padding: 3% 3%;
+}
+
+.limpiarButton:hover {
+  background-color: #46c586;  color: white;
+}
+
+.mensajeUno{
+  position: relative;  width: 96%;  margin-top:10%;  left:2%;  text-align: center;
+  font-family: 'Inter';  font-style: normal;  font-weight: 700;  font-size: 24px;  color: #343A40; display: none;
+}
+
+.mensajeDos{
+  position: relative;  width: 96%;  margin-top: 10%;  left:2%;  height:75%;  text-align: center;
+  font-family: 'Inter';  font-style: normal;  font-weight: bold;  font-size: 14px;  color: #449494; display: none;
+}
+
+.imagen{
+  position: relative; left: 47%; display: flex; flex-flow: row;
+  width: 10%; height: 10%; display: none;
+}
+
+
+footer{
+  position: relative; 
+  left: 0%;
+  background-color: rgba (68, 148, 148, 0.5);
+  margin-top: 4%;
+  height: 8%;
+  width: 100%;
+  top: 110%;
+  background: linear-gradient(to right, #3caa94,#449494, #3caa94);
+  transition: 0.3s ease all;
+  text-align: center;
+  color: #fff;
+}
+
+p{
+  position: relative; width: 100%; height:20%; font-size: 14px;
+  font-style: bold; color: #ffffff; text-align: center; top:20%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px ) { /*Probado en ipad*/
+
+  .caja_uno{
+    position: absolute; width: 61%; height: 44%; top: 4.8% ;left: 2%; 
+  }
+
+  .mensaje_acento{
+    position: absolute; width: 61%; height: 44%; top: 48% ;left: 2%; height: 3%; text-align: left;
+  }
+
+  .caja_dos{
+    position: absolute; width: 96%; height: 40%; top: 55%; left: 2%;
+  }
+
+  .contenedorDos{
+    position: absolute; left: 67%; top: 15%; margin: 0% 0% 0% 0%; padding: 0% 0% 0% 0%; height: 15%; width: 28%;
+  }
+
+  .encryptorButton {
+    position: absolute; top: 1%;  width: 96%; height: 40%;
+  }
+
+.decryptorButton {
+  position: absolute;  top: 55%;  width: 96%; height: 40%;
+  }
+
+.limpiarButton {
+    position: absolute;  left: 64%; top: 44.7%;  width: 17%; height: 8%;
+}
+
+.copiarButton {
+  position: absolute;  left: 85%; top: 40.5%;  width: 10%; height: 8%;
+}
+
+.mensajeUno{
+  position: absolute; width: 61%; height: 20%; top: 65% ;left: 3%;  text-align: center; 
+  }
+
+.mensajeDos{
+  position: absolute; width: 61%; height: 10%; top: 75% ;left: 3%;  text-align: center;
+}
+
+.imagen{
+  position: absolute; width: 40%; height: 30%; top: 65% ;left: 55%;  text-align: center;
+}
+
+
+footer{
+  position: absolute; top: 92% ; height: 4%; margin-top:5%;text-align: center;
+}
+
+p{
+  position: relative; width: 100%; height:20%; font-size: 19px;
+  font-style: bold; color: #ffffff; text-align: center; top:20%;
+}
+
+}
+
+@media only screen and (min-width: 1024px) { /*Probado en ipad orientation: landscape*/
+
+
+  .caja_uno{
+    position: absolute; width: 61%; height: 40%; top: 3% ;left: 2%; 
+  }
+
+  .mensaje_acento{
+     top: 44% ;
+  }
+
+  .caja_dos{
+     top: 53%; left: 2%;
+  }
+
+  .contenedorDos{
+    top: 15%; height: 15%; width: 30%;
+  }
+
+  .limpiarButton {
+    top: 43%;  width: 18%; height: 8%;
+  }
+
+  .copiarButton {
+     top: 41%;  left: 85.8%; margin-top: 0%; width: 10%; height: 10%;
+  }
+
+  .mensajeUno{
+     top: 55% ;left: 3%;  text-align: center;
+  }
+
+  .mensajeDos{
+     top: 64% ;left: 3%;  text-align: center;
+  }
+
+  .imagen{
+    width: 35%; height: 40%; top: 55% ;left: 65%; 
+  }
+
+
+  footer{
+     top: 88% ; height: 4%; margin-top:5%;
+  }
+
+}
+
+@media only screen and (min-width: 1280px) { /*Probado en http://responsivetesttool.com/*/
+
+
+  .caja_uno{
+     height: 40%;
+  }
+
+  .caja_dos{
+     text-align: justify;
+  }
+ 
+  .limpiarButton {
+    top: 41%;  
+  }
+
+  .imagen{
+    width: 30%; height: 40%; top: 58% ;left: 68%; 
+  }
+
+}
+
+@media only screen and (min-width: 1366px) { /*Probado en http://responsivetesttool.com/*/
+
+
+  .caja_uno{
+      height: 38%;
+  }
+
+  .mensaje_acento{
+     top: 43% ;
+  }
+
+  .caja_dos{
+     top: 54%; text-align: justify;
+  }
+ 
+  .copiarButton {
+     top: 39%;  left: 85.8%; margin-top: 0%; width: 10%; height: 13%;
+  }
+
+  .limpiarButton {
+    top: 39%;  
+  }
+
+  .imagen{
+    width: 25%; height: 40%; top: 58% ;left: 68%; 
+  }
+
+  footer{
+     top: 85% ; 
+
+  }
+}
+
+
+@media only screen and (min-width: 1440px) { /*Probado en http://responsivetesttool.com/*/
+
+  .caja_dos{
+      top: 51%; text-align: justify;
+    }
+ 
+  .copiarButton {
+     height: 10%;
+  }
+
+  .limpiarButton {
+    top: 39%;  
+  }
+
+  .mensajeUno{
+     top: 50%;
+  }
+
+  .mensajeDos{
+     top: 60%;
+  }
+
+  .imagen{
+    width: 20%; height: 30%; top: 58% ;left: 68%; 
+  }
+
+  footer{
+     top: 85% ; 
+
+}
+
+}
+
+@media only screen and (min-width: 1920px) { /*Probado en http://responsivetesttool.com/*/
+
+  .caja_uno{
+      top: 1%; 
+    }
+ 
+  .copiarButton {
+    top: 37.5%; width: 10%; height: 12%;
+  }
+ 
+  .limpiarButton {
+    top: 37%;  
+  }
+
+  .mensajeUno{
+     top: 50%;
+  }
+
+  .mensajeDos{
+     top: 60%;
+  }
+
+  .imagen{
+    width: 20%; height: 30%; top: 58% ;left: 68%; 
+  }
+
+  footer{
+     top: 85% ; 
+
+}
+
+}
+

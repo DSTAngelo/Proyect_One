@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style_Encryptor.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/encryptor.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+        <title>Encryptor</title>
+    </head>
+    <body>
+
+        <header>
+            <h1 class = "titulo"><span class="icon-combination-lock"></span> Encryptor</h1>
+        </header>
+        <main>
+            <div class="container">
+                <section class="contenedor">
+                            <textarea type="text" class="caja_uno" id="cajaUno" placeholder="Ingrese el Texto Aqui" rows="8" onclick="ocultarTexto()" autofocus="true"></textarea>
+                            <label class="mensaje_acento"><span class="icon-info"></span> Solo letras minúsculas y sin acentos</label>
+                </section>
+                <section class="contenedorDos">
+                            <input id="botonEncriptar" class="encryptorButton" type="button" value="Encriptar" onclick="encryptor()">
+                            <input class="decryptorButton" type="button" value="Desencriptar" onclick="decryptor()">
+                </section>
+                <section class="contenedorTres">
+                            <textarea readonly class="caja_dos" name="respuestaArea" id="respuesta"   rows="9"></textarea>
+                </section>
+                <section class="contenedorCuatro">
+                            
+                            <input class="limpiarButton" type="button" value="Limpiar" onclick="limpiarCajas()">
+                            <button id="copiarTexto" class="copiarButton" onclick=" copyToClipBoard()">
+                                <i class="icon-copy"></i>
+                            </button>
+
+                </section> 
+                <section class="contenedorCinco">
+                    <label class="mensajeUno" id="mensaje_Uno">
+                        <h2>Ningún mensaje fue encontrado <span class="icon-info"></span></h2></label>
+                    <label class="mensajeDos" id="mensaje_Dos">Ingresa el texto de desees encriptar o desencriptar</label>
+                </section>
+
+                <img id="imagen_no_encontrada" class="imagen" src="png/No_Encontrado_2.png" width="256" height="256">
+            </div>
+                <footer>
+                    <p>Todos los derechos reservados © 2022</p>
+                </footer>
+
+        </main>
+<!---->
+    </body>
+</html>
